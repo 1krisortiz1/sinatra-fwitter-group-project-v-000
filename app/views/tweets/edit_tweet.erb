@@ -3,7 +3,7 @@
 <form action="/tweets/<%= @tweet.id %>" method="post">
     <input type="hidden" id="hidden" name="_method" value="patch">
 <p>Tweet</p>
-<input type="text" id="content" value="<%= @tweet.content %>"
+<input type="text" id="content" value="<%= @tweet.content %>">
 
 <p>Edit tweet here</p>
 <textarea rows="10" cols="100" name="content" id="content" value=""></textarea>
