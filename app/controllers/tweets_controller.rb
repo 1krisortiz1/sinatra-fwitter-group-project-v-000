@@ -41,6 +41,7 @@ class TweetsController < ApplicationController
 #update
 
     get '/tweets/:id/edit' do
+        binding.pry
         if logged_in?
             @tweet = Tweet.find_by_id(params[:id])
             if @tweet.user.username == current_user.username
