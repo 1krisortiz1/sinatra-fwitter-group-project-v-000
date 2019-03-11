@@ -48,7 +48,7 @@ class TweetsController < ApplicationController
             else
                 erb :'/tweets/tweets'
             end
-            redirect to '/tweets/edit_tweet'
+            #redirect to '/tweets/edit_tweet'
         else
             redirect to '/login'
         end
