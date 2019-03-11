@@ -66,9 +66,9 @@ class TweetsController < ApplicationController
         end
     end
 
-#delete action 
+#delete action
     delete '/tweets/:id/delete' do
-        
+
 
     end
 
