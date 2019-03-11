@@ -58,7 +58,7 @@ class TweetsController < ApplicationController
 
     patch '/tweets/:id' do
         #binding.pry
-        @tweet = Tweet.find_by(params[:id])
+        @tweet = Tweet.find_by(id: params[:id])
         if logged_in?
             if params[:content] != ""
                 @tweet.update(content: params[:content])
