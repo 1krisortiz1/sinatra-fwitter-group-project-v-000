@@ -72,8 +72,5 @@ class TweetsController < ApplicationController
         if @tweet.user ==
         @tweet.delete
         redirect to '/tweets'
-
     end
-
-
 end
