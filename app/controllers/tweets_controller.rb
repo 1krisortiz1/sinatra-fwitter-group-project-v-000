@@ -67,7 +67,7 @@ class TweetsController < ApplicationController
     end
 
 #delete action
-    delete '/tweets/:id/delete' do
+    post '/tweets/:id/delete' do
         @tweet = Tweet.find_by_id(params[:id])
         @tweet.user == current_user
             @tweet.delete
