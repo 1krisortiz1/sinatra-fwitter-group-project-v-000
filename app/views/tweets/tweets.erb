@@ -3,6 +3,8 @@
 
 <a href="/tweets/new">Tweet away!</a>
 
+<p>
 <% Tweet.all.each do |t| %>
 <%= t.content %>
 <% end %>
+</p>
