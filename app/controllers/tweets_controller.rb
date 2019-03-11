@@ -80,5 +80,6 @@ class TweetsController < ApplicationController
             else
                 redirect to "/tweets"
             end
+        end
     end
 end
